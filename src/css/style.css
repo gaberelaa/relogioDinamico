@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap');
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+:root {
+    --morning-color:  #88A66A;
+    --white-color: #fff;
+}
+
+body {
+    background-color: var(--morning-color);
+    margin: 7rem;
+}
+
+header {   
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {   
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.2rem;
+    color: var(--white-color);
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal {
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.205);
+    box-shadow:10px 11px 19px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+p{
+    font-size: 1.8rem;
+    color: var(--white-color);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#saudacao {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+#emoji {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+img {
+    width: 300px;
+    padding-top: 1rem;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer p {
+    opacity: 30%;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: var(--neutral-color2);
+}
