@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--morning-color);
-    margin: 7rem;
+    margin-top: 7rem;
 }
 
 header {   
@@ -28,6 +28,7 @@ header h1 {
     color: var(--white-color);
     font-size: 3rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
 main {
@@ -40,7 +41,7 @@ main {
 .principal {
     margin: 1rem;
     padding: 1.5rem;
-    width: 500px;
+    width: 31.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +72,7 @@ p{
 }
 
 img {
-    width: 300px;
+    width: 18.75rem;
     padding-top: 1rem;
     border-radius: 50%;
 }
@@ -99,3 +100,54 @@ footer a {
 footer p:hover {
     color: var(--neutral-color2);
 }
+
+
+/* responsividade */
+
+@media screen and (max-width: 767px) {
+
+    body {
+        margin-top: 3rem;
+    }
+
+    header h1 {   
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .principal {
+        padding: 1rem;
+        width: 21rem;
+        box-shadow:5px 5px 10px rgba(0, 0, 0, 0.438);
+        margin: 2rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+
+}
+   
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        margin-top: 7rem;
+    }
+
+    header h1 {   
+        font-size: 3.5rem;
+        margin-top: 0;
+    }
+
+    .principal {
+        padding: 3rem;
+        width: 40rem;
+        margin: 2rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+    
+}
+    
