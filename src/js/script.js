@@ -26,6 +26,7 @@ function trocar() {
     } else {
         greetings.innerText = 'Boa noite!'
         emoji.innerText = '😴'
+        img.src='src/images/night.jpg'
         document.body.style.background = '#354024'
     }
 }
